@@ -11,7 +11,7 @@ export default function Home() {
       <section className="relative pt-32 pb-20 px-6 max-w-7xl mx-auto">
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-primary/20 blur-[120px] rounded-full pointer-events-none" />
 
-        <h1 className="text-6xl md:text-8xl font-bold tracking-tight mb-6">
+        <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold tracking-tight mb-6">
           Build. <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-brand-primary">Scale.</span> Automate.
         </h1>
         <p className="text-xl text-gray-400 max-w-2xl mb-12">

@@ -232,11 +232,11 @@ export default function BentoGrid() {
                 The <span className="text-brand-accent">Growth</span> Ecosystem
             </motion.h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-4 grid-rows-3 md:grid-rows-2 gap-4 md:h-[600px]">
+            <div className="grid grid-cols-1 md:grid-cols-4 grid-rows-none md:grid-rows-2 gap-4 md:h-[600px] auto-rows-min">
 
                 {/* 1. Engineering Core (Large Vertical) */}
                 <motion.div
-                    className="md:col-span-2 md:row-span-2 bg-surface rounded-3xl border border-white/5 overflow-hidden relative group hover:border-brand-primary/30 transition-colors"
+                    className="md:col-span-2 md:row-span-2 bg-surface rounded-3xl border border-white/5 overflow-hidden relative group hover:border-brand-primary/30 transition-colors min-h-[400px]"
                     whileHover={{ y: -5 }}
                 >
                     <div className="absolute inset-x-0 bottom-0 top-1/2 bg-gradient-to-t from-neutral-950 via-neutral-950/80 to-transparent z-10" />
@@ -261,7 +261,7 @@ export default function BentoGrid() {
 
                 {/* 2. Growth Engine (Horizontal) */}
                 <motion.div
-                    className="md:col-span-2 bg-surface rounded-3xl border border-white/5 overflow-hidden relative group hover:border-brand-accent/30 transition-colors"
+                    className="md:col-span-2 bg-surface rounded-3xl border border-white/5 overflow-hidden relative group hover:border-brand-accent/30 transition-colors min-h-[250px]"
                     whileHover={{ y: -5 }}
                 >
                     <div className="absolute right-0 bottom-0 w-2/3 h-full z-0 opacity-50 group-hover:opacity-80 transition-opacity">
@@ -279,7 +279,7 @@ export default function BentoGrid() {
 
                 {/* 3. Intelligence Hub (Small) */}
                 <motion.div
-                    className="bg-surface rounded-3xl border border-white/5 overflow-hidden relative group hover:border-blue-500/30 transition-colors flex flex-col"
+                    className="bg-surface rounded-3xl border border-white/5 overflow-hidden relative group hover:border-blue-500/30 transition-colors flex flex-col min-h-[250px]"
                     whileHover={{ y: -5 }}
                 >
                     <div className="flex-1 p-4 relative">
@@ -299,7 +299,7 @@ export default function BentoGrid() {
             Col 4, Row 2: Automation (Square) - Let's make this consistent with the plan.
         */}
                 <motion.div
-                    className="bg-surface rounded-3xl border border-white/5 overflow-hidden relative group hover:border-purple-500/30 transition-colors"
+                    className="bg-surface rounded-3xl border border-white/5 overflow-hidden relative group hover:border-purple-500/30 transition-colors min-h-[250px]"
                     whileHover={{ y: -5 }}
                 >
                     <div className="absolute inset-0 opacity-40 group-hover:opacity-60 transition-opacity">
@@ -334,7 +334,7 @@ export default function BentoGrid() {
       */}
             <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4 h-48">
                 <motion.div
-                    className="md:col-span-3 bg-surface rounded-3xl border border-white/5 overflow-hidden relative group hover:border-white/20 transition-colors flex items-center justify-between"
+                    className="md:col-span-3 bg-surface rounded-3xl border border-white/5 overflow-hidden relative group hover:border-white/20 transition-colors flex items-center justify-between min-h-[200px]"
                     whileHover={{ scale: 1.01 }}
                 >
                     <div className="absolute inset-0 z-0">
