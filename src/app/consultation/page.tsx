@@ -7,7 +7,7 @@ export default function ConsultationPage() {
             <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-start">
 
                 {/* Left Column: Trust & Context */}
-                <div className="sticky top-32">
+                <div className="md:sticky md:top-32">
                     <div className="bg-brand-primary/10 border border-brand-primary/20 w-fit px-3 py-1 rounded-full text-brand-primary text-xs font-bold mb-6">
                         APPLY FOR PARTNERSHIP
                     </div>

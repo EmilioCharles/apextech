@@ -112,17 +112,17 @@ export default async function ServicePage(props: PageProps) {
                 <p className="text-gray-400 mb-8 max-w-lg mx-auto">
                     Stop settling for average. Let's build something world-class.
                 </p>
-                <div className="flex justify-center gap-4">
+                <div className="flex flex-col md:flex-row justify-center gap-4">
                     <Link
                         href="/consultation"
-                        className={`px-8 py-4 rounded-full font-bold text-lg text-black bg-white hover:scale-105 transition-transform`}
+                        className={`w-full md:w-auto px-8 py-4 rounded-full font-bold text-lg text-black bg-white hover:scale-105 transition-transform`}
                     >
                         Start Project
                     </Link>
                     {service.category === 'GROW' && (
                         <Link
                             href="/consultation"
-                            className={`px-8 py-4 rounded-full font-bold text-lg border border-brand-accent text-brand-accent hover:bg-brand-accent/10 transition-colors`}
+                            className={`w-full md:w-auto px-8 py-4 rounded-full font-bold text-lg border border-brand-accent text-brand-accent hover:bg-brand-accent/10 transition-colors`}
                         >
                             Get Free Audit
                         </Link>
