@@ -1,0 +1,51 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Lead {
+  id        String   @id @default(cuid())
+  email     String
+  name      String?
+  company   String?
+  service   ServiceType
+  message   String?
+  budget    String?
+  // If they requested an SEO audit, store the URL here
+  auditUrl  String? 
+  createdAt DateTime @default(now())
+  status    LeadStatus @default(NEW)
+}
+
+enum ServiceType {
+  WEB_DEV
+  SAAS
+  AI_AUTOMATION
+  DATA_ANALYSIS
+  SEO
+  BRANDING
+}
+
+enum LeadStatus {
+  NEW
+  CONTACTED
+  BOOKED
+  CLOSED
+}
+
+model ServicePage {
+  slug          String   @id
+  title         String
+  tagline       String
+  description   String
+  category      String   // BUILD, GROW, OPTIMIZE
+  problemTitle  String
+  problemDesc   String
+  solutionTitle String
+  solutionDesc  String
+  deliverables  String[]
+  updatedAt     DateTime @updatedAt
+}
