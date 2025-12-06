@@ -42,6 +42,16 @@ export default function CaseStudiesPage() {
             icon: ArrowUpRight,
             color: "text-purple-400",
             description: "Architected a HIPAA-compliant data warehouse for patient analytics, giving doctors real-time insights into treatment efficacy."
+        },
+        {
+            title: "Cross-Platform App Suite",
+            client: "Nexus Systems",
+            tags: ["Windows", "Linux", "Mac"],
+            metric: "60%",
+            metricLabel: "Dev Time Reduced",
+            icon: Users,
+            color: "text-emerald-400",
+            description: "Developed a unified application framework allowing single-codebase deployment across all major desktop OSs, slashing maintenance costs."
         }
     ];
 

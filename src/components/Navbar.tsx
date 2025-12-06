@@ -1,11 +1,13 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { clsx } from "clsx";
 import MegaMenu from "./MegaMenu";
 
 export default function Navbar() {
+    const pathname = usePathname();
     const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
@@ -17,6 +19,8 @@ export default function Navbar() {
     }, []);
 
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+    const isActive = (path: string) => pathname === path;
 
     return (
         <nav
@@ -41,13 +45,31 @@ export default function Navbar() {
                 {/* Desktop Navigation */}
                 <div className="hidden md:flex items-center gap-6">
                     <MegaMenu />
-                    <Link href="/about" className="text-sm font-medium hover:text-brand-primary transition-colors">
+                    <Link
+                        href="/about"
+                        className={clsx(
+                            "text-sm font-medium transition-colors",
+                            isActive("/about") ? "text-brand-primary font-bold" : "hover:text-brand-primary"
+                        )}
+                    >
                         About
                     </Link>
-                    <Link href="/projects" className="text-sm font-medium hover:text-brand-primary transition-colors">
+                    <Link
+                        href="/projects"
+                        className={clsx(
+                            "text-sm font-medium transition-colors",
+                            isActive("/projects") ? "text-brand-primary font-bold" : "hover:text-brand-primary"
+                        )}
+                    >
                         Projects
                     </Link>
-                    <Link href="/case-studies" className="text-sm font-medium hover:text-brand-primary transition-colors">
+                    <Link
+                        href="/case-studies"
+                        className={clsx(
+                            "text-sm font-medium transition-colors",
+                            isActive("/case-studies") ? "text-brand-primary font-bold" : "hover:text-brand-primary"
+                        )}
+                    >
                         Case Studies
                     </Link>
                 </div>
