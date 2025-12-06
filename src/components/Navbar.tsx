@@ -44,6 +44,9 @@ export default function Navbar() {
                     <Link href="/about" className="text-sm font-medium hover:text-brand-primary transition-colors">
                         About
                     </Link>
+                    <Link href="/projects" className="text-sm font-medium hover:text-brand-primary transition-colors">
+                        Projects
+                    </Link>
                     <Link href="/case-studies" className="text-sm font-medium hover:text-brand-primary transition-colors">
                         Case Studies
                     </Link>
@@ -115,6 +118,7 @@ export default function Navbar() {
 
                         <div className="flex flex-col gap-4">
                             <Link href="/about" onClick={() => setMobileMenuOpen(false)} className="text-2xl font-bold text-white">About</Link>
+                            <Link href="/projects" onClick={() => setMobileMenuOpen(false)} className="text-2xl font-bold text-white">Projects</Link>
                             <Link href="/case-studies" onClick={() => setMobileMenuOpen(false)} className="text-2xl font-bold text-white">Case Studies</Link>
                         </div>
 
