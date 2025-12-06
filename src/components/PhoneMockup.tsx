@@ -6,7 +6,7 @@ interface PhoneMockupProps {
 
 export default function PhoneMockup({ children }: PhoneMockupProps) {
     return (
-        <div className="relative mx-auto w-[200px]">
+        <div className="relative mx-auto w-full">
             <div className="relative rounded-[2.5rem] bg-[#1a1a1a] p-2 shadow-xl border border-white/10 ring-1 ring-black">
                 {/* Camera / Notch Area */}
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 h-6 w-32 bg-black rounded-b-xl z-20 flex justify-center items-center">

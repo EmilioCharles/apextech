@@ -77,7 +77,7 @@ export default function ProjectsPage() {
                                 </div>
 
                                 {/* Phone - Visible on all screens, adjusted positioning */}
-                                <div className="absolute -right-2 -bottom-6 w-[25%] md:w-[20%] z-20 transform group-hover:translate-x-2 transition-transform duration-500">
+                                <div className="absolute -right-2 -bottom-6 w-[20%] z-20 transform group-hover:translate-x-2 transition-transform duration-500">
                                     <PhoneMockup>
                                         <img
                                             src={project.mobileImg}
