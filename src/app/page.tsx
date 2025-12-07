@@ -1,4 +1,5 @@
 import BookingForm from '@/components/BookingForm';
+import HomeProjects from '@/components/HomeProjects';
 import BentoGrid from '@/components/BentoGrid';
 import LiveDashboard from '@/components/LiveDashboard';
 import Testimonials from '@/components/Testimonials';
@@ -21,6 +22,9 @@ export default function Home() {
 
       {/* The 2.0 Bento Grid */}
       <BentoGrid />
+
+      {/* Selected Projects */}
+      <HomeProjects />
 
       {/* The Intelligence Layer */}
       <section className="px-6 py-20 max-w-7xl mx-auto">
